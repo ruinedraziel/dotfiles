@@ -6,7 +6,7 @@ cp rofi ~/.config -r
 cp picom.conf ~/.config/
 cp polybar.sh ~/
 cp tema.sh ~/
-cp wallpapper.sh ~/
+cp wallpaper.sh ~/
 cp wall2.jpg ~/
 cp wallnew.jpg ~/
 sudo cp display/* /etc/X11/xorg.conf.d/
