@@ -11,8 +11,30 @@ cp wallpapper.sh ~/
 cp wall2.jpg ~/
 cp wallnew.jpg ~/
 
-sudo pacman -Sy
-sudo pacman -S picom kitty polybar rofi feh git gifsicle qemu-full nautilus networkmanager-openvpn openvpn libreoffice-fresh firefox hunspell remmina libvncserver ttf-font-awesome awesome-terminal-fonts xclip rofi-calc rofi-emoji python-pywal16 wget curl
+sudo pacman -Syu
+sudo pacman -S picom --noconfirm
+sudo pacman -S kitty --noconfirm
+sudo pacman -S polybar --noconfirm
+sudo pacman -S rofi --noconfirm
+sudo pacman -S feh --noconfirm
+sudo pacman -S git --noconfirm
+sudo pacman -S gifsicle --noconfirm
+sudo pacman -S qemu-full --noconfirm
+sudo pacman -S nautilus --noconfirm
+sudo pacman -S networkmanager-openvpn --noconfirm
+sudo pacman -S openvpn --noconfirm
+sudo pacman -S libreoffice-fresh --noconfirm
+sudo pacman -S firefox --noconfirm
+sudo pacman -S hunspell --noconfirm
+sudo pacman -S remmina --noconfirm
+sudo pacman -S libvncserver --noconfirm
+sudo pacman -S ttf-font-awesome --noconfirm
+sudo pacman -S awesome-terminal-fonts --noconfirm
+sudo pacman -S xclip rofi-calc --noconfirm
+sudo pacman -S rofi-emoji --noconfirm
+sudo pacman -S python-pywal16 --noconfirm
+sudo pacman -S wget curl --noconfirm
+
 mkdir ~/temp && cd ~/temp
 git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin
@@ -20,6 +42,10 @@ makepkg
 ls paru*.zst | sudo pacman -U -
 sudo rm ~/temp -r
 paru -S xwinwrap-0.9-bin visual-studio-code-bin diodon zapzap-git vesktop spotify_player brave-bin hunspell-pt-br dbeaver-ce-bin
+sudo groups add libvirt
+sudo groups add gamemode
+sudo groups add docker
+sudo groups add plugdev
 sudo gpasswd -a $(whoami) wheel
 sudo gpasswd -a $(whoami) libvirt
 sudo gpasswd -a $(whoami) gamemode
