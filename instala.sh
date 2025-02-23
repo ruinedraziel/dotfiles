@@ -31,10 +31,12 @@ sudo pacman -S remmina --noconfirm
 sudo pacman -S libvncserver --noconfirm
 sudo pacman -S ttf-font-awesome --noconfirm
 sudo pacman -S awesome-terminal-fonts --noconfirm
-sudo pacman -S xclip rofi-calc --noconfirm
+sudo pacman -S xclip --no-confirm 
+sudo pacman -S rofi-calc --noconfirm
 sudo pacman -S rofi-emoji --noconfirm
 sudo pacman -S python-pywal16 --noconfirm
-sudo pacman -S wget curl --noconfirm
+sudo pacman -S wget --no-confirm
+sudo pacman -S curl --noconfirm
 sudo pacman -S cargo --noconfirm
 
 #Install paru for the necesseary aur packages
@@ -55,15 +57,23 @@ paru -S spotify_player --noconfirm
 paru -S brave-bin --noconfirm
 paru -S hunspell-pt-br --noconfirm
 paru -S dbeaver-ce-bin --noconfirm
+
+#create groups needed
 sudo groupadd libvirt
 sudo groupadd gamemode
 sudo groupadd docker
 sudo groupadd plugdev
+
+#added current user the groups
 sudo gpasswd -a $(whoami) wheel
 sudo gpasswd -a $(whoami) libvirt
 sudo gpasswd -a $(whoami) gamemode
 sudo gpasswd -a $(whoami) docker
 sudo gpasswd -a $(whoami) plugdev
+
+#start default vm network
 sudo virsh net-autostart default
 sudo virsh net-start default
+
+#install bash theme
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
