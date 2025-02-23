@@ -34,6 +34,7 @@ sudo pacman -S xclip rofi-calc --noconfirm
 sudo pacman -S rofi-emoji --noconfirm
 sudo pacman -S python-pywal16 --noconfirm
 sudo pacman -S wget curl --noconfirm
+sudo pacman -S cargo --noconfirm
 
 mkdir ~/temp && cd ~/temp
 git clone https://aur.archlinux.org/paru.git
