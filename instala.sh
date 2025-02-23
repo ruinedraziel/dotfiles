@@ -37,15 +37,15 @@ sudo pacman -S wget curl --noconfirm
 
 mkdir ~/temp && cd ~/temp
 git clone https://aur.archlinux.org/paru-bin.git
-cd paru-bin
+cd paru
 makepkg
 ls paru*.zst | sudo pacman -U -
 sudo rm ~/temp -r
 paru -S xwinwrap-0.9-bin visual-studio-code-bin diodon zapzap-git vesktop spotify_player brave-bin hunspell-pt-br dbeaver-ce-bin
-sudo groups add libvirt
-sudo groups add gamemode
-sudo groups add docker
-sudo groups add plugdev
+sudo groupadd libvirt
+sudo groupadd gamemode
+sudo groupadd docker
+sudo groupadd plugdev
 sudo gpasswd -a $(whoami) wheel
 sudo gpasswd -a $(whoami) libvirt
 sudo gpasswd -a $(whoami) gamemode
