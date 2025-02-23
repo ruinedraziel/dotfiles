@@ -12,7 +12,8 @@ cp wall2.jpg ~/
 cp wallnew.jpg ~/
 
 sudo pacman -Sy
-sudo pacman -S picom kitty polybar rofi feh git gifsicle qemu-full nautilus networkmanager-openvpn openvpn libreoffice-fresh firefox hunspell remmina libvncserver ttf-font-awesome awesome-terminal-fonts xclip rofi-calc rofi-emoji python-pywal16 wget
+sudo pacman -S picom kitty polybar rofi feh git gifsicle qemu-full nautilus networkmanager-openvpn openvpn libreoffice-fresh firefox hunspell remmina libvncserver ttf-font-awesome awesome-terminal-fonts xclip rofi-calc rofi-emoji python-pywal16 wget curl
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 mkdir ~/temp && cd ~/temp
 git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin
@@ -27,5 +28,3 @@ gpasswd -a $(whoami) docker
 gpasswd -a $(whoami) plugdev
 sudo virsh net-autostart default
 sudo virsh net-start default
-bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
-
