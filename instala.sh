@@ -36,7 +36,7 @@ sudo pacman -S python-pywal16 --noconfirm
 sudo pacman -S wget curl --noconfirm
 
 mkdir ~/temp && cd ~/temp
-git clone https://aur.archlinux.org/paru-bin.git
+git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg
 ls paru*.zst | sudo pacman -U -
