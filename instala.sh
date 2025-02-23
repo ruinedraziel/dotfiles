@@ -21,10 +21,10 @@ makepkg
 ls paru*.zst | sudo pacman -U -
 sudo rm ~/temp -r
 paru -S xwinwrap-0.9-bin visual-studio-code-bin diodon zapzap-git vesktop spotify_player brave-bin hunspell-pt-br dbeaver-ce-bin
-gpasswd -a $(whoami) wheel
-gpasswd -a $(whoami) libvirt
-gpasswd -a $(whoami) gamemode
-gpasswd -a $(whoami) docker
-gpasswd -a $(whoami) plugdev
+sudo gpasswd -a $(whoami) wheel
+sudo gpasswd -a $(whoami) libvirt
+sudo gpasswd -a $(whoami) gamemode
+sudo gpasswd -a $(whoami) docker
+sudo gpasswd -a $(whoami) plugdev
 sudo virsh net-autostart default
 sudo virsh net-start default
