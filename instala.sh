@@ -1,5 +1,4 @@
 #!/bin/bash
-
 cp i3 ~/.config/ -r
 cp kitty ~/.config -r
 cp polybar ~/.config -r
@@ -13,6 +12,7 @@ cp wallnew.jpg ~/
 sudo cp display/* /etc/X11/xorg.conf.d/
 sudo cp theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/
 sudo cp theme/waneella.conf /usr/share/sddm/themes/sddm-astronaut-theme/
+sudo cp theme/waneella.gif /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
 
 #Install basic packages
 sudo pacman -Syu
@@ -45,6 +45,7 @@ sudo pacman -S neovim --noconfirm
 sudo pacman -S neofetch --noconfirm
 sudo pacman -S xfce4-power-manager --noconfirm
 sudo pacman -S sddm --noconfirm
+sudo pacman -S steam lutris wine --noconfirm
 
 #set sddm as the display manager
 sudo systemctl enable sddm
@@ -58,6 +59,7 @@ ls paru*.zst | sudo pacman -U -
 sudo rm ~/temp -r
 
 #install aur packages
+paru -S protonplus --noconfirm
 paru -S xwinwrap-0.9-bin --noconfirm
 paru -S visual-studio-code-bin --noconfirm
 paru -S diodon --noconfirm
@@ -85,6 +87,9 @@ sudo gpasswd -a $(whoami) plugdev
 #start default vm network
 sudo virsh net-autostart default
 sudo virsh net-start default
+
+#configura tema de cores
+~/tema.sh
 
 #install bash theme
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
