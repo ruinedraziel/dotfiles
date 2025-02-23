@@ -11,6 +11,8 @@ cp wallpapper.sh ~/
 cp wall2.jpg ~/
 cp wallnew.jpg ~/
 sudo cp display/* /etc/X11/xorg.conf.d/
+sudo cp theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/
+sudo cp theme/waneella.conf /usr/share/sddm/themes/sddm-astronaut-theme/
 
 #Install basic packages
 sudo pacman -Syu
@@ -42,6 +44,10 @@ sudo pacman -S cargo --noconfirm
 sudo pacman -S neovim --noconfirm
 sudo pacman -S neofetch --noconfirm
 sudo pacman -S xfce4-power-manager --noconfirm
+sudo pacman -S sddm --noconfirm
+
+#set sddm as the display manager
+sudo systemctl enable sddm
 
 #Install paru for the necesseary aur packages
 mkdir ~/temp && cd ~/temp
@@ -61,6 +67,7 @@ paru -S spotify_player --noconfirm
 paru -S brave-bin --noconfirm
 paru -S hunspell-pt-br --noconfirm
 paru -S dbeaver-ce-bin --noconfirm
+paru -S sddm-astronaut-theme --noconfirm
 
 #create groups needed
 sudo groupadd libvirt
@@ -81,3 +88,5 @@ sudo virsh net-start default
 
 #install bash theme
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
+sudo reboot
