@@ -11,6 +11,7 @@ cp wallpapper.sh ~/
 cp wall2.jpg ~/
 cp wallnew.jpg ~/
 
+#Install basic packages
 sudo pacman -Syu
 sudo pacman -S picom --noconfirm
 sudo pacman -S kitty --noconfirm
@@ -36,13 +37,24 @@ sudo pacman -S python-pywal16 --noconfirm
 sudo pacman -S wget curl --noconfirm
 sudo pacman -S cargo --noconfirm
 
+#Install paru for the necesseary aur packages
 mkdir ~/temp && cd ~/temp
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg
 ls paru*.zst | sudo pacman -U -
 sudo rm ~/temp -r
-paru -S xwinwrap-0.9-bin visual-studio-code-bin diodon zapzap-git vesktop spotify_player brave-bin hunspell-pt-br dbeaver-ce-bin
+
+#install aur packages
+paru -S xwinwrap-0.9-bin --noconfirm
+paru -S visual-studio-code-bin --noconfirm
+paru -S diodon --noconfirm
+paru -S zapzap-git --noconfirm
+paru -S vesktop --noconfirm
+paru -S spotify_player --noconfirm
+paru -S brave-bin --noconfirm
+paru -S hunspell-pt-br --noconfirm
+paru -S dbeaver-ce-bin --noconfirm
 sudo groupadd libvirt
 sudo groupadd gamemode
 sudo groupadd docker
