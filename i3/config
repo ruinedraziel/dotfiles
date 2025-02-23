@@ -293,12 +293,8 @@ exec --no-startup-id picom -b
 
 #Apps padrao
 exec --no-startup-id vesktop
-#exec --no-startup-id discord
-#exec --no-startup-id spotify
 exec --no-startup-id i3-msg exec 'kitty -e spotify_player'
-#exec --no-startup-id polychromatic-tray-applet
 exec --no-startup-id i3-msg exec 'dunst'
-#powerManager
 exec --no-startup-id xfce4-power-manager
 
 ## Clipboard/Screenshots
@@ -312,9 +308,7 @@ set $walCommand 'wal -i ~/Arte.gif -n'
 
 exec --no-startup-id "sleep 1; ~/wallpaper.sh"
 exec --no-startup-id i3-msg exec $walCommand
-#"wal -i ~/wallnew.jpg -n"
 
 exec --no-startup-id "xset s off -dpms"
 exec --no-startup-id "sleep 1; ~/polybar.sh"
-#exec --no-startup-id "sleep 0.5; polybar secundaria"
-
+exec --no-startup-id "xrandr --output DisplayPort-0 --mode 1920x1080 --rate 165"

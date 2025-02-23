@@ -10,6 +10,7 @@ cp tema.sh ~/
 cp wallpapper.sh ~/
 cp wall2.jpg ~/
 cp wallnew.jpg ~/
+sudo cp display/* /etc/X11/xorg.conf.d/
 
 #Install basic packages
 sudo pacman -Syu
@@ -38,6 +39,9 @@ sudo pacman -S python-pywal16 --noconfirm
 sudo pacman -S wget --no-confirm
 sudo pacman -S curl --noconfirm
 sudo pacman -S cargo --noconfirm
+sudo pacman -S neovim --noconfirm
+sudo pacman -S neofetch --noconfirm
+sudo pacman -S xfce4-power-manager --noconfirm
 
 #Install paru for the necesseary aur packages
 mkdir ~/temp && cd ~/temp
