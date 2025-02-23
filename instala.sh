@@ -9,10 +9,6 @@ cp tema.sh ~/
 cp wallpaper.sh ~/
 cp wall2.jpg ~/
 cp wallnew.jpg ~/
-sudo cp display/* /etc/X11/xorg.conf.d/
-sudo cp theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/
-sudo cp theme/waneella.conf /usr/share/sddm/themes/sddm-astronaut-theme/
-sudo cp theme/waneella.gif /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
 
 #Install basic packages
 sudo pacman -Syu
@@ -87,6 +83,12 @@ sudo gpasswd -a $(whoami) plugdev
 #start default vm network
 sudo virsh net-autostart default
 sudo virsh net-start default
+
+#configura tema sddm
+sudo cp display/* /etc/X11/xorg.conf.d/
+sudo cp theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/
+sudo cp theme/waneella.conf /usr/share/sddm/themes/sddm-astronaut-theme/
+sudo cp theme/waneella.gif /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
 
 #configura tema de cores
 ~/tema.sh
