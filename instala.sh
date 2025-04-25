@@ -1,6 +1,9 @@
 #!/bin/bash
 cp Arte.gif ~/
 cp sddm/sddm.conf /etc
+cp spotify_status.py ~/.config/
+cp bashrc ~/
+cp konsolerc ~/.config
 cp i3 ~/.config/ -r
 cp kitty ~/.config -r
 cp polybar ~/.config -r
@@ -16,7 +19,7 @@ cp wallnew.jpg ~/
 #Install basic packages
 sudo pacman -Syu
 sudo pacman -S picom --noconfirm
-sudo pacman -S kitty --noconfirm
+sudo pacman -S konsole --noconfirm
 sudo pacman -S polybar --noconfirm
 sudo pacman -S rofi --noconfirm
 sudo pacman -S feh --noconfirm
