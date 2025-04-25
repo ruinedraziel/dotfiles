@@ -2,6 +2,7 @@
 cp i3 ~/.config/ -r
 cp kitty ~/.config -r
 cp polybar ~/.config -r
+cp wal ~/.cache/wal -r
 cp rofi ~/.config -r
 cp picom.conf ~/.config/
 cp polybar.sh ~/
