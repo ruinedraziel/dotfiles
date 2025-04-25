@@ -1,4 +1,5 @@
 #!/bin/bash
+cp Arte.gif ~/
 cp sddm/sddm.conf /etc
 cp i3 ~/.config/ -r
 cp kitty ~/.config -r
@@ -46,7 +47,6 @@ sudo pacman -S sddm --noconfirm
 sudo pacman -S steam --noconfirm
 sudo pacman -S lutris  --noconfirm
 sudo pacman -S wine --noconfirm
-sudo pacman -S python-pywal --noconfirm
 
 #set sddm as the display manager
 sudo systemctl enable sddm
@@ -66,10 +66,11 @@ paru -S visual-studio-code-bin --noconfirm
 paru -S diodon --noconfirm
 paru -S zapzap-git --noconfirm
 paru -S vesktop --noconfirm
-paru -S spotify_player --noconfirm
+paru -S spotify-player-full --noconfirm
 paru -S brave-bin --noconfirm
 paru -S hunspell-pt-br --noconfirm
 paru -S dbeaver-ce-bin --noconfirm
+paru -S python-pywal16 --noconfirm
 paru -S sddm-astronaut-theme --noconfirm
 
 #create groups needed
@@ -92,7 +93,7 @@ sudo virsh net-start default
 #configura telas e team do sddm
 sudo cp display/* /etc/X11/xorg.conf.d/
 sudo cp theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/
-sudo cp theme/waneella.conf /usr/share/sddm/themes/sddm-astronaut-theme/
+sudo cp theme/waneella.conf /usr/share/sddm/themes/sddm-astronaut-theme/Themes/
 sudo cp theme/waneella.gif /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
 
 #configura tema de cores

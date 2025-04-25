@@ -1,0 +1,18 @@
+[Desktop Entry]
+DefaultProfile=Rafael.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[SplitView]
+SplitViewVisibility=AlwaysHideSplitHeader
+
+[TabBar]
+CloseTabButton=None
+TabBarVisibility=AlwaysHideTabBar
+
+[UiSettings]
+ColorScheme=

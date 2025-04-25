@@ -142,7 +142,7 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-neofetch
+fastfetch
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/rafaelmercado/.lmstudio/bin"
