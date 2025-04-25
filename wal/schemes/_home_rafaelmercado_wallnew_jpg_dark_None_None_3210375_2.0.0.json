@@ -1,0 +1,28 @@
+{
+    "checksum": "09ef0364b535e7a037106b4fd16a3e95",
+    "wallpaper": "/home/rafaelmercado/wallnew.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0d0b",
+        "foreground": "#c1c2c2",
+        "cursor": "#c1c2c2"
+    },
+    "colors": {
+        "color0": "#0a0d0b",
+        "color1": "#4E5A6B",
+        "color2": "#39588E",
+        "color3": "#55689D",
+        "color4": "#5A72C9",
+        "color5": "#8872A0",
+        "color6": "#6A8DCB",
+        "color7": "#c1c2c2",
+        "color8": "#566960",
+        "color9": "#4E5A6B",
+        "color10": "#39588E",
+        "color11": "#55689D",
+        "color12": "#5A72C9",
+        "color13": "#8872A0",
+        "color14": "#6A8DCB",
+        "color15": "#c1c2c2"
+    }
+}

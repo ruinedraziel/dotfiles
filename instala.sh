@@ -41,7 +41,10 @@ sudo pacman -S neovim --noconfirm
 sudo pacman -S neofetch --noconfirm
 sudo pacman -S xfce4-power-manager --noconfirm
 sudo pacman -S sddm --noconfirm
-sudo pacman -S steam lutris wine --noconfirm
+sudo pacman -S steam --noconfirm
+sudo pacman -S lutris  --noconfirm
+sudo pacman -S wine --noconfirm
+sudo pacman -S python-pywal --noconfirm
 
 #set sddm as the display manager
 sudo systemctl enable sddm
@@ -84,7 +87,7 @@ sudo gpasswd -a $(whoami) plugdev
 sudo virsh net-autostart default
 sudo virsh net-start default
 
-#configura tema sddm
+#configura telas e team do sddm
 sudo cp display/* /etc/X11/xorg.conf.d/
 sudo cp theme/metadata.desktop /usr/share/sddm/themes/sddm-astronaut-theme/
 sudo cp theme/waneella.conf /usr/share/sddm/themes/sddm-astronaut-theme/

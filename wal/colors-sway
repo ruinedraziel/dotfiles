@@ -1,0 +1,21 @@
+set $wallpaper /home/rafaelmercado/Arte.gif
+
+set $background #081A2B
+set $foreground #c1c5ca
+
+set $color0 #081A2B
+set $color1 #5A6591
+set $color2 #036FC2
+set $color3 #8D77A0
+set $color4 #259EA6
+set $color5 #2893B9
+set $color6 #5496B2
+set $color7 #c1c5ca
+set $color8 #5e6974
+set $color9 #5A6591
+set $color10 #036FC2
+set $color11 #8D77A0
+set $color12 #259EA6
+set $color13 #2893B9
+set $color14 #5496B2
+set $color15 #c1c5ca

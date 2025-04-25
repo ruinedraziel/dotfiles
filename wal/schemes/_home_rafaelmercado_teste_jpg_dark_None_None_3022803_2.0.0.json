@@ -1,0 +1,28 @@
+{
+    "checksum": "5e58f215fbaf1be021f57eac8a540d24",
+    "wallpaper": "/home/rafaelmercado/teste.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0D0C16",
+        "foreground": "#c2c2c4",
+        "cursor": "#c2c2c4"
+    },
+    "colors": {
+        "color0": "#0D0C16",
+        "color1": "#2B3565",
+        "color2": "#483850",
+        "color3": "#384474",
+        "color4": "#544E68",
+        "color5": "#3B5197",
+        "color6": "#57629B",
+        "color7": "#c2c2c4",
+        "color8": "#59596e",
+        "color9": "#2B3565",
+        "color10": "#483850",
+        "color11": "#384474",
+        "color12": "#544E68",
+        "color13": "#3B5197",
+        "color14": "#57629B",
+        "color15": "#c2c2c4"
+    }
+}

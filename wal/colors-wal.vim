@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/rafaelmercado/Arte.gif"
+let background = "#081A2B"
+let foreground = "#c1c5ca"
+let cursor     = "#c1c5ca"
+
+" Colors
+let color0  = "#081A2B"
+let color1  = "#5A6591"
+let color2  = "#036FC2"
+let color3  = "#8D77A0"
+let color4  = "#259EA6"
+let color5  = "#2893B9"
+let color6  = "#5496B2"
+let color7  = "#c1c5ca"
+let color8  = "#5e6974"
+let color9  = "#5A6591"
+let color10 = "#036FC2"
+let color11 = "#8D77A0"
+let color12 = "#259EA6"
+let color13 = "#2893B9"
+let color14 = "#5496B2"
+let color15 = "#c1c5ca"
