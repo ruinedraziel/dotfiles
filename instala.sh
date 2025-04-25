@@ -1,4 +1,5 @@
 #!/bin/bash
+cp sddm/sddm.conf /etc
 cp i3 ~/.config/ -r
 cp kitty ~/.config -r
 cp polybar ~/.config -r
