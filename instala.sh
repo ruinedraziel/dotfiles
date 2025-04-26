@@ -53,6 +53,7 @@ sudo pacman -S wine --noconfirm
 sudo pacman -S thunderbird --noconfirm
 sudo pacman -S upower --noconfirm
 sudo pacman -S mate-power-manager --noconfirm
+sudo pacman -S fprint fprintd --noconfirm
 
 #set sddm as the display manager
 sudo systemctl enable sddm
