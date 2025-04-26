@@ -32,11 +32,11 @@ sudo pacman -S openvpn --noconfirm
 sudo pacman -S libreoffice-fresh --noconfirm
 sudo pacman -S firefox --noconfirm
 sudo pacman -S hunspell --noconfirm
-sudo pacman -S remmina --noconfirm
+sudo pacman -S freerdp remmina --noconfirm
 sudo pacman -S libvncserver --noconfirm
 sudo pacman -S ttf-font-awesome --noconfirm
 sudo pacman -S awesome-terminal-fonts --noconfirm
-sudo pacman -S xclip --no-confirm 
+sudo pacman -S xclip xdotool maim --no-confirm 
 sudo pacman -S rofi-calc --noconfirm
 sudo pacman -S rofi-emoji --noconfirm
 sudo pacman -S python-pywal16 --noconfirm
@@ -44,12 +44,15 @@ sudo pacman -S wget --no-confirm
 sudo pacman -S curl --noconfirm
 sudo pacman -S cargo --noconfirm
 sudo pacman -S neovim --noconfirm
-sudo pacman -S neofetch --noconfirm
+sudo pacman -S fastfetch --noconfirm
 sudo pacman -S xfce4-power-manager --noconfirm
 sudo pacman -S sddm --noconfirm
 sudo pacman -S steam --noconfirm
 sudo pacman -S lutris  --noconfirm
 sudo pacman -S wine --noconfirm
+sudo pacman -S thunderbird --noconfirm
+sudo pacman -S upower --noconfirm
+sudo pacman -S mate-power-manager --noconfirm
 
 #set sddm as the display manager
 sudo systemctl enable sddm
