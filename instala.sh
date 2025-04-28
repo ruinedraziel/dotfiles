@@ -54,6 +54,7 @@ sudo pacman -S thunderbird --noconfirm
 sudo pacman -S upower --noconfirm
 sudo pacman -S mate-power-manager --noconfirm
 sudo pacman -S fprint fprintd --noconfirm
+sudo pacman -S bluez blueztui --noconfirm
 
 #set sddm as the display manager
 sudo systemctl enable sddm
